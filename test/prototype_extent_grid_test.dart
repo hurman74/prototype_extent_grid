@@ -690,6 +690,23 @@ void main() {
       handle.dispose();
     });
 
+    testWidgets('appears in debug dumps of the render tree', (
+      WidgetTester tester,
+    ) async {
+      await tester.pumpWidget(
+        host(
+          gridView(
+            columns: const PrototypeGridColumns.count(4),
+            prototype: const SizedBox(height: 50),
+          ),
+        ),
+      );
+
+      final String dump = gridRenderObject(tester).toStringDeep();
+      expect(dump, contains('prototype:'));
+      expect(dump, contains('columns: PrototypeGridColumns.count(4)'));
+    });
+
     testWidgets('does not receive taps', (WidgetTester tester) async {
       int prototypeTaps = 0;
       int itemTaps = 0;
