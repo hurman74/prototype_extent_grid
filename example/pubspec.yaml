@@ -1,0 +1,22 @@
+name: prototype_extent_grid_example
+description: Demonstrates the prototype_extent_grid package.
+publish_to: none
+version: 1.0.0
+
+environment:
+  sdk: ">=3.8.0 <4.0.0"
+  flutter: ">=3.32.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  prototype_extent_grid:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
