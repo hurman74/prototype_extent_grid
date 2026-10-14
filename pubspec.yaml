@@ -1,0 +1,27 @@
+name: prototype_extent_grid
+description: >-
+  A Flutter grid whose cell size is measured from a prototype item, the grid
+  counterpart of SliverPrototypeExtentList. No hard-coded tile heights.
+version: 0.1.0
+repository: https://github.com/hurman74/prototype_extent_grid
+issue_tracker: https://github.com/hurman74/prototype_extent_grid/issues
+
+topics:
+  - grid
+  - sliver
+  - layout
+  - widget
+  - performance
+
+environment:
+  sdk: ">=3.8.0 <4.0.0"
+  flutter: ">=3.32.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
