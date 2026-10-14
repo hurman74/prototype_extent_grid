@@ -42,6 +42,9 @@ class PrototypeExtentGridView extends BoxScrollView {
     bool addAutomaticKeepAlives = true,
     bool addRepaintBoundaries = true,
     bool addSemanticIndexes = true,
+    // Flutter 3.41 deprecated cacheExtent in favor of scrollCacheExtent, which older
+    // supported versions don't have. cacheExtent still works on both.
+    // ignore: deprecated_member_use
     super.cacheExtent,
     List<Widget> children = const <Widget>[],
     int? semanticChildCount,
@@ -86,6 +89,9 @@ class PrototypeExtentGridView extends BoxScrollView {
     bool addAutomaticKeepAlives = true,
     bool addRepaintBoundaries = true,
     bool addSemanticIndexes = true,
+    // Flutter 3.41 deprecated cacheExtent in favor of scrollCacheExtent, which older
+    // supported versions don't have. cacheExtent still works on both.
+    // ignore: deprecated_member_use
     super.cacheExtent,
     int? semanticChildCount,
     super.dragStartBehavior,
@@ -122,6 +128,9 @@ class PrototypeExtentGridView extends BoxScrollView {
     this.columns = const PrototypeGridColumns.fit(),
     this.mainAxisSpacing = 0.0,
     this.crossAxisSpacing = 0.0,
+    // Flutter 3.41 deprecated cacheExtent in favor of scrollCacheExtent, which older
+    // supported versions don't have. cacheExtent still works on both.
+    // ignore: deprecated_member_use
     super.cacheExtent,
     super.semanticChildCount,
     super.dragStartBehavior,
