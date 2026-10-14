@@ -6,6 +6,14 @@ version: 0.1.0
 repository: https://github.com/hurman74/prototype_extent_grid
 issue_tracker: https://github.com/hurman74/prototype_extent_grid/issues
 
+screenshots:
+  - description: Rows follow the prototype as the text size changes.
+    path: doc/demo.gif
+  - description: GridView with childAspectRatio overflows at large text; PrototypeExtentGridView fits.
+    path: doc/comparison.png
+  - description: The count, maxExtent and fit column strategies.
+    path: doc/column_modes.png
+
 topics:
   - grid
   - sliver

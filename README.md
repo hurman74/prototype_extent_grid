@@ -7,6 +7,15 @@ Give the grid one representative card. It is laid out offstage, and its size bec
 every cell. Change the text scale, the theme, the locale or the window width, and the rows follow.
 No more guessing a `childAspectRatio` or hard-coding a `mainAxisExtent`.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/hurman74/prototype_extent_grid/main/doc/demo.gif" width="320" alt="A recipe grid whose rows grow and shrink as the text size changes from 0.8x to 2.0x">
+</p>
+
+With a fixed `childAspectRatio`, larger text overflows the cells. Here the rows are measured
+from the prototype, so they always fit:
+
+![A GridView with childAspectRatio overflowing at 1.6x text, next to PrototypeExtentGridView fitting the same content](https://raw.githubusercontent.com/hurman74/prototype_extent_grid/main/doc/comparison.png)
+
 ## Install
 
 ```sh
@@ -49,6 +58,8 @@ CustomScrollView(
 ```
 
 ### Choosing the columns
+
+![The same recipes laid out with count(2), maxExtent(130) and fit()](https://raw.githubusercontent.com/hurman74/prototype_extent_grid/main/doc/column_modes.png)
 
 | Strategy | Columns | Cell width | Cell height |
 | --- | --- | --- | --- |
